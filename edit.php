@@ -21,8 +21,9 @@ $row = $barang->fetch_assoc();
     <title>Tambah Data Produk</title>
   </head>
   <body>
-   <div class="col-xs-12">
-    <div class="container">
+   <div class="container mt-5">
+     <div class="row">
+      <div class="col-md-8">
         <h1>Ubah Data Produk</h1>
         <hr>
           <form action="edit_data.php" method="post">
@@ -47,15 +48,14 @@ $row = $barang->fetch_assoc();
                 <input type="number" class="form-control" value="<?php echo $row['jumlah']; ?>" name="jumlah" >
               </div>
              </div> 
-              <a href="index.php" class="btn btn-danger">Kembali</a>
-              <input type="submit" name="simpan" class="btn btn-primary" value="Simpan" >
+              <a href="index.php" class="btn btn-dark">Kembali</a>
+              <input onclick="return confirm('Anda yakin?');" type="submit" name="simpan" class="btn btn-secondary" value="Simpan" >
               </div>   
               
             </form>
         </div>
-    </div>
-     
-   </div>
+    </div>   
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

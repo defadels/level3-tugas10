@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2020 at 05:53 PM
+-- Generation Time: Jan 06, 2021 at 03:00 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -40,11 +40,8 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id`, `nama_produk`, `keterangan`, `harga`, `jumlah`) VALUES
-(1, 'Madu Al-Hafizh', 'Mudah hutan murni dari hutan Sumatera Utara.', 85000, 100),
-(2, 'Jahe Merah Insaan', 'Jahe merah bubuk dengan gula aren murni.', 15000, 60),
-(3, 'Briyani Paste', 'Bumbu cepat saji untuk membuat nasi briyani.', 900000, 50),
-(4, 'Kurma Sukkari', 'Kurma asli dari Mesir', 65000, 80),
-(8, 'Printer EPSON L120', 'Printer epson kualitas bagus dan bergaransi', 2000000, 40);
+(17, 'Lenovo L340', 'Lenovo AMD Ryzen 3', 6000000, 60),
+(18, 'ASUS ROG', 'Asus gaming pro', 19000000, 6);
 
 --
 -- Indexes for dumped tables
@@ -64,7 +61,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

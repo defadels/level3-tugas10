@@ -14,8 +14,10 @@ include 'koneksi.php';
     <title>Tambah Data Produk</title>
   </head>
   <body>
-   <div class="col-xs-12">
-    <div class="container">
+    <div class="container mt-5">
+      <div class="row">
+   <div class="col-md-8">
+   
         <h1>Tambah Data Produk</h1>
         <hr>
           <form action="tambah_data.php" method="post">
@@ -39,8 +41,8 @@ include 'koneksi.php';
                 <input type="number" class="form-control" name="jumlah" placeholder="Masukkan jumlah stok">
               </div>
              </div> 
-              <a href="index.php" class="btn btn-danger">Kembali</a>
-              <input type="submit" name="simpan" class="btn btn-primary" value="Simpan" >
+              <a href="index.php" class="btn btn-dark">Kembali</a>
+              <input type="submit" name="simpan" class="btn btn-secondary" value="Simpan" >
               </div>   
               
             </form>

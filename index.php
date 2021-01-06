@@ -13,16 +13,15 @@
   </head>
   <body>
     <div class="container">
-      <div class="row align-item-center">
-        <div class="col-xs-8">
-          <div class="container">
-
+      <div class="row">
+        <div class="col-md-12 mt-5">
             <h1>Data Produk</h1>
             <hr>
-            <a href="tambah.php" class="btn btn-primary btn-lg">Tambah Data</a>
-            <table class="table table-dark">
+            <a href="tambah.php" class="btn btn-secondary btn-lg">Tambah Data</a>
+            <hr>
+            <table class="table table-bordered">
               <thead>
-                <tr>
+                <tr class="table-secondary">
                   <th>No</th>
                   <th>Nama Produk</th>
                   <th>Keterangan</th>
@@ -48,8 +47,8 @@
                   <td><?php echo $row['keterangan']; ?></td>
                   <td><?php echo "Rp.".number_format($row['harga']); ?></td>
                   <td><?php echo $row['jumlah']; ?></td>
-                  <td><a href="edit.php?id=<?php echo $row['id'] ?>" class="btn btn-success">Edit</a></td>
-                  <td><a href="hapus.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Hapus</a></td>
+                  <td><a href="edit.php?id=<?php echo $row['id'] ?>" class="btn btn-secondary">Edit</a></td>
+                  <td><a onclick="return confirm('Anda yakin?');" href="hapus.php?id=<?php echo $row['id'] ?>" class="btn btn-dark" >Hapus</a></td>
                 </tr>
                
               </tbody>
@@ -59,8 +58,8 @@
               }
 
                ?>
-            </table>      
-        </div>
+            </table>
+            
     </div>
   </div>  
     
